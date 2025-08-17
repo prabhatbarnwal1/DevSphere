@@ -1,10 +1,6 @@
 import axios from "axios";
 
-<<<<<<< HEAD
 const API_BASE_URL = "http://localhost:5000/api";
-=======
-const API_BASE_URL = "https://devsphere-server-srn8.onrender.com/api";
->>>>>>> 83aa994d76d98c5a0da4f77c5cea8d37e013ddc7
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
