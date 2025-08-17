@@ -14,7 +14,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
+<<<<<<< HEAD
     origin: "http://localhost:5173",
+=======
+    origin: "https://devsphere-je3i.onrender.com",
+>>>>>>> 83aa994d76d98c5a0da4f77c5cea8d37e013ddc7
     credentials: true,
     optionsSuccessStatus: 200,
   })

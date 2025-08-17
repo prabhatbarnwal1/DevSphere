@@ -3,7 +3,11 @@ import axios from "axios";
 import { useUserStore } from "../stores/userStore";
 import { allPostsStore } from "../stores/postsStore";
 
+<<<<<<< HEAD
 const URL = "http://localhost:5000";
+=======
+const URL = "https://devsphere-server-srn8.onrender.com";
+>>>>>>> 83aa994d76d98c5a0da4f77c5cea8d37e013ddc7
 
 const PostModal = ({ open, setModalOpen }) => {
   const {
