@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "https://dev-sphere-z321.vercel.app/",
+    origin: "https://dev-sphere-z321.vercel.app",
     credentials: true,
     optionsSuccessStatus: 200,
   })
