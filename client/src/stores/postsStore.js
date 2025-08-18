@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const URL = "https://dev-sphere-z321.vercel.app/";
+const URL = "https://dev-sphere-z321.vercel.app";
 
 export const userPostsStore = create((set) => ({
   userPosts: [],

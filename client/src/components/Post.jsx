@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useUserStore } from "../stores/userStore";
 import { allPostsStore } from "../stores/postsStore";
 
-const URL = "https://dev-sphere-z321.vercel.app/";
+const URL = "https://dev-sphere-z321.vercel.app";
 
 const getOwnerInfo = async (owner_id) => {
   const response = await axios.get(`${URL}/api/users/${owner_id}`);

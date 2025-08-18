@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useUserStore } from "../stores/userStore";
 
-const URL = "https://dev-sphere-z321.vercel.app/";
+const URL = "https://dev-sphere-z321.vercel.app";
 
 function ProfileCard({ user, editable = false, onProfileUpdate }) {
   const [isEditMode, setIsEditMode] = useState(false);
