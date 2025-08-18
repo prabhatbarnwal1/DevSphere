@@ -3,7 +3,7 @@ import axios from "axios";
 import { useUserStore } from "../stores/userStore";
 import { allPostsStore } from "../stores/postsStore";
 
-const URL = "http://localhost:5000";
+const URL = "https://dev-sphere-z321.vercel.app/";
 
 const PostModal = ({ open, setModalOpen }) => {
   const {

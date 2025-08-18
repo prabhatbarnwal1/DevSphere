@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const URL = "http ://localhost:5000";
+const URL = "https://dev-sphere-z321.vercel.app/";
 
 export const userPostsStore = create((set) => ({
   userPosts: [],
@@ -18,7 +18,15 @@ export const allPostsStore = create((set, get) => ({
     set({ posts: Array.isArray(response.data) ? response.data : [] });
   },
 
-  addPost: async (post) => set({ posts: [post, ...get().posts] }),
+  addPost: async (post) => {
+    try {
+      const response = await axios.post(`${URL}/api/posts`, post);
+      // Optionally, use response.data if backend returns the created post
+      await get().getPosts(); // Refresh posts from backend
+    } catch (error) {
+      console.error("Error adding post:", error);
+    }
+  },
 
   updatePost: (updatedPost) => {
     const posts = get().posts;

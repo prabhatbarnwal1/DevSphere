@@ -4,7 +4,7 @@ import { useUserStore } from "../stores/userStore";
 import axios from "axios";
 import ProfileCard from "../components/ProfileCard";
 
-const URL = "http://localhost:5000";
+const URL = "https://dev-sphere-z321.vercel.app/";
 
 function ProfilePage() {
   const { id } = useParams();

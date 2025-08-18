@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import axios from "axios";
 
-const URL = "http://localhost:5000";
+const URL = "https://dev-sphere-z321.vercel.app/";
 
 export const useUserStore = create(
   persist(
